@@ -2,10 +2,10 @@
 
 Performs a mass rename of files renamed with the initial version of AiPhotoRename or AiVideoRename.
 
-This Python script renames files from the format `IMG_XXXX_YYYYMMDD_Description.extension` to `YYYYMMDD_Description_IMG_XXXX.extension`, where:
+This Python script renames files from the format `OriginalFilename_YYYYMMDD_Caption.extension` to `YYYYMMDD_Caption_OriginalFilename.extension`, where:
 - **XXXX** = Four-digit number (e.g., 0001, 1234)
 - **YYYYMMDD** = Date in YYYYMMDD format (e.g., 20231215)
-- **Description** = File description (e.g., Beach_Sunset, Mountain_View)
+- **Caption** = AI generated caption (e.g., Beach_Sunset, Mountain_View)
 - **extension** = File extension (e.g., .jpg, .png, .mp4)
 
 ## Requirements
@@ -62,17 +62,11 @@ After:
 - `20231216_Mountain_View_IMG_0002.png`
 - `20240101_New_Year_IMG_0003.mp4`
 
-## Running Tests
+## Remarks
 
-To run the test suite:
-```bash
-python test_image_rename.py
-```
-
-For verbose output:
-```bash
-python test_image_rename.py -v
-```
+This script was used for me to change my initial renames of images and videos after I decided
+I didn't like the original format. It may not be that useful for any other purpose, but feel
+free to use it as an example or modify it for your own purposes.
 
 ## License
 
